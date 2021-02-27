@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- 
+        The head is where you provide meta data 
+        and load in CSS and other assets
+    -->
+    
+    <!-- Search Engine Optimization (don't worry about it) -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000" />
+    <meta
+        name="description"
+        content="My personal website"
+    />
+
+    <!-- Change the favicon (tab icon) -->
+    <link rel="icon" href="./img/favicon.ico" />
+    <!-- Change the tab title -->
+    <title>My Personal Website</title>
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+    <link href="./css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- 
+        The body is where your content goes!  
+    -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">Jenny Lee</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <!-- You can link visitors to a PDF of your resume -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Front/top of the page -->
+    <section id="hero">
+        <div id="element">
+            <div class="text">
+                <h1>Jenny Lee</h1>
+                <h4>Maker @ USC</h4>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Everything about you!!! -->
+    <section id="about">
+        <div class="container">
+            <div id="blurb" class="row">
+                <div class="text-center offset-4 col-4">
+                    <img src="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-alt-512.png" class="img-fluid"/>
+                    <h2>Who am I?</h2>
+                    <p>I am awesome. Insert a blurb about yourself. Keep this short but sweet</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- List out your skills/what you do -->
+    <section id="skills">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <img src="https://i.imgur.com/AWnfQqp.jpg" class="img-fluid" />
+                </div>
+
+                <div class="col-6">
+                    <h3>Soldering</h3>
+                    <p>I'm really good at soldering</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use this for a portfolio -->
+    <section id="gallery">
+        <div class="container">
+            <div class="text-center">
+                <h2>Portfolio</h2>
+                <p>Check out the cool stuff I made</p>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <img src="https://viterbimakers.usc.edu/img/project-pictures/SpacePainter.jpg" class="img-fluid"/>
+                </div>
+                <div class="col-4">
+                    <img src="https://viterbimakers.usc.edu/img/project-pictures/SmartLock.jpg" class="img-fluid"/>
+                </div>
+                <div class="col-4">
+                    <img src="https://viterbimakers.usc.edu/img/project-pictures/MaskLock.JPG" class="img-fluid"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How do people get in touch with you? -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="text-center">Contact</h2>
+            <div class="row">
+                <div class="col-md-5 mx-auto">
+                    <p class="text-center">
+                        Here's how you can contact me
+                    </p>
+
+                    <!-- 
+                        GitHub doesn't allow you to host a server so
+                        you're going to need to use an external service
+                        like formspree.io to handle emails sent from
+                        your website. Or you can just link your visitors
+                        a mailto:your@email.com
+                    -->
+                    <form action="/" method="POST">
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Your name"
+                            class="form-control"
+                        />
+                        <input
+                            type="text"
+                            name="_replyto"
+                            placeholder="your@email.com"
+                            class="form-control"
+                        />
+                        <textarea
+                            name="body"
+                            placeholder="Your message"
+                            class="form-control"
+                        ></textarea>
+                        <input
+                            type="submit"
+                            name="submit"
+                            value="Send"
+                            class="form-control btn-accent"
+                        />
+                    </form>
+                    <p class="text-center">
+                        or email 
+                        <a
+                            href="mailto:who-am-i@usc.edu"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            who-am-i@usc.edu
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Show something at the bottom -->
+    <footer>
+        <div class="container">
+            <p>Made with <span role="img" aria-label="hearts">❤️💛❤️</span> by your name &copy; 2021</p>
+            <p><a href="#hero">Go back up</a></p>
+        </div>
+    </footer>
+
+    <!-- It's common practice to load JavaScript in last -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="three.r119.min.js"></script>
+    <script src="vanta.birds.min.js"></script>
+    <script>
+    VANTA.BIRDS({
+      el: "#element",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 400.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00
+    })
+    </script>
+</body>
+</html>
